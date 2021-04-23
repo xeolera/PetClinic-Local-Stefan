@@ -1,327 +1,151 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.2.2 (Python 3.9.1 on win32)" generated="20210219 15:15:11.562" rpa="false">
-<suite id="s1" name="Tests" source="C:\Users\stefa\PycharmProjects\testprojekt\Tests">
-<suite id="s1-s1" name="Webtest" source="C:\Users\stefa\PycharmProjects\testprojekt\Tests\webtest.robot">
-<kw name="Begin Web Test" library="keywords" type="setup">
+<robot generator="Robot 4.0.1 (Python 3.9.4 on win32)" generated="20210423 13:42:06.388" rpa="false" schemaversion="2">
+<suite id="s1" name="petclinic Owner" source="C:\Users\stefa\PycharmProjects\robot\Tests\petclinic_Owner.robot">
+<test id="s1-t1" name="User can access website.">
+<kw name="Begin Web Test" library="keywords_owner" type="SETUP">
 <kw name="Open Browser" library="SeleniumLibrary">
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<arguments>
 <arg>about:blank</arg>
 <arg>${BROWSER}</arg>
-</arguments>
-<msg timestamp="20210219 15:15:11.860" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
-<status status="PASS" starttime="20210219 15:15:11.860" endtime="20210219 15:15:13.158"></status>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20210423 13:42:06.535" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20210423 13:42:06.535" endtime="20210423 13:42:07.547"/>
 </kw>
 <kw name="Set Selenium Timeout" library="SeleniumLibrary">
-<doc>Sets the timeout that is used by various keywords.</doc>
-<arguments>
 <arg>10</arg>
-</arguments>
-<status status="PASS" starttime="20210219 15:15:13.159" endtime="20210219 15:15:13.161"></status>
+<doc>Sets the timeout that is used by various keywords.</doc>
+<status status="PASS" starttime="20210423 13:42:07.547" endtime="20210423 13:42:07.548"/>
 </kw>
-<status status="PASS" starttime="20210219 15:15:11.859" endtime="20210219 15:15:13.161"></status>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>2</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20210423 13:42:07.548" endtime="20210423 13:42:07.549"/>
 </kw>
-<test id="s1-s1-t1" name="User can access website">
-<kw name="Go to Web Page" library="keywords">
-<kw name="Load Page" library="keywords">
+<status status="PASS" starttime="20210423 13:42:06.535" endtime="20210423 13:42:07.549"/>
+</kw>
+<kw name="Go to Web Page" library="keywords_owner">
+<kw name="Load Page" library="keywords_owner">
 <kw name="Go To" library="SeleniumLibrary">
-<doc>Navigates the current browser window to the provided ``url``.</doc>
-<arguments>
 <arg>${URL}</arg>
-</arguments>
-<msg timestamp="20210219 15:15:13.166" level="INFO">Opening url 'https:/www.willys.se/'</msg>
-<status status="PASS" starttime="20210219 15:15:13.166" endtime="20210219 15:15:17.180"></status>
-</kw>
-<status status="PASS" starttime="20210219 15:15:13.163" endtime="20210219 15:15:17.180"></status>
-</kw>
-<kw name="Verify Page Loaded" library="keywords">
-<kw name="Get Title" library="SeleniumLibrary">
-<doc>Returns the title of the current page.</doc>
-<assign>
-<var>${LINK_TEXT}</var>
-</assign>
-<msg timestamp="20210219 15:15:17.278" level="INFO">${LINK_TEXT} = Handla billig mat online | Willys</msg>
-<status status="PASS" starttime="20210219 15:15:17.181" endtime="20210219 15:15:17.279"></status>
-</kw>
-<kw name="Should Be Equal" library="BuiltIn">
-<doc>Fails if the given objects are unequal.</doc>
-<arguments>
-<arg>${LINK_TEXT}</arg>
-<arg>Handla billig mat online | Willys</arg>
-</arguments>
-<status status="PASS" starttime="20210219 15:15:17.279" endtime="20210219 15:15:17.279"></status>
-</kw>
-<status status="PASS" starttime="20210219 15:15:17.180" endtime="20210219 15:15:17.280"></status>
-</kw>
-<status status="PASS" starttime="20210219 15:15:13.163" endtime="20210219 15:15:17.280"></status>
-</kw>
-<doc>This is some basic info about the test</doc>
-<tags>
-<tag>Test 1</tag>
-</tags>
-<status status="PASS" starttime="20210219 15:15:13.161" endtime="20210219 15:15:17.281" critical="yes"></status>
-</test>
-<test id="s1-s1-t2" name="User can access website AND search for specific word/product">
-<kw name="Go to Web Page" library="keywords">
-<kw name="Load Page" library="keywords">
-<kw name="Go To" library="SeleniumLibrary">
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<arguments>
-<arg>${URL}</arg>
-</arguments>
-<msg timestamp="20210219 15:15:17.285" level="INFO">Opening url 'https:/www.willys.se/'</msg>
-<status status="PASS" starttime="20210219 15:15:17.285" endtime="20210219 15:15:18.399"></status>
+<msg timestamp="20210423 13:42:07.550" level="INFO">Opening url 'http://localhost:4200/'</msg>
+<status status="PASS" starttime="20210423 13:42:07.550" endtime="20210423 13:42:09.712"/>
 </kw>
-<status status="PASS" starttime="20210219 15:15:17.284" endtime="20210219 15:15:18.400"></status>
+<status status="PASS" starttime="20210423 13:42:07.550" endtime="20210423 13:42:09.712"/>
 </kw>
-<kw name="Verify Page Loaded" library="keywords">
+<kw name="Verify Page Loaded" library="keywords_owner">
 <kw name="Get Title" library="SeleniumLibrary">
-<doc>Returns the title of the current page.</doc>
-<assign>
 <var>${LINK_TEXT}</var>
-</assign>
-<msg timestamp="20210219 15:15:18.450" level="INFO">${LINK_TEXT} = Handla billig mat online | Willys</msg>
-<status status="PASS" starttime="20210219 15:15:18.400" endtime="20210219 15:15:18.450"></status>
-</kw>
-<kw name="Should Be Equal" library="BuiltIn">
-<doc>Fails if the given objects are unequal.</doc>
-<arguments>
-<arg>${LINK_TEXT}</arg>
-<arg>Handla billig mat online | Willys</arg>
-</arguments>
-<status status="PASS" starttime="20210219 15:15:18.450" endtime="20210219 15:15:18.450"></status>
-</kw>
-<status status="PASS" starttime="20210219 15:15:18.400" endtime="20210219 15:15:18.451"></status>
-</kw>
-<status status="PASS" starttime="20210219 15:15:17.284" endtime="20210219 15:15:18.451"></status>
-</kw>
-<kw name="Search for Product" library="keywords">
-<arguments>
-<arg>kiwi</arg>
-</arguments>
-<kw name="Enter Search Term" library="keywords">
-<arguments>
-<arg>${SEARCH_TERM}</arg>
-</arguments>
-<kw name="Input Text" library="SeleniumLibrary">
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<arguments>
-<arg>id:selenium--search-items-input</arg>
-<arg>${SEARCH_TERM}</arg>
-</arguments>
-<msg timestamp="20210219 15:15:18.454" level="INFO">Typing text 'kiwi' into text field 'id:selenium--search-items-input'.</msg>
-<status status="PASS" starttime="20210219 15:15:18.453" endtime="20210219 15:15:18.906"></status>
-</kw>
-<status status="PASS" starttime="20210219 15:15:18.452" endtime="20210219 15:15:18.906"></status>
-</kw>
-<kw name="Submit Search" library="keywords">
-<kw name="Press Keys" library="SeleniumLibrary">
-<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<arguments>
-<arg>xpath://input[@id="selenium--search-items-input"]</arg>
-<arg>RETURN</arg>
-</arguments>
-<msg timestamp="20210219 15:15:18.907" level="INFO">Sending key(s) ('RETURN',) to xpath://input[@id="selenium--search-items-input"] element.</msg>
-<msg timestamp="20210219 15:15:20.137" level="INFO">Pressing special key RETURN to element.</msg>
-<msg timestamp="20210219 15:15:20.137" level="INFO">Releasing special key RETURN.</msg>
-<status status="PASS" starttime="20210219 15:15:18.907" endtime="20210219 15:15:20.144"></status>
-</kw>
-<status status="PASS" starttime="20210219 15:15:18.906" endtime="20210219 15:15:20.144"></status>
-</kw>
-<kw name="Press Keys" library="SeleniumLibrary">
-<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<arguments>
-<arg>xpath://input[@id="selenium--search-items-input"]</arg>
-<arg>RETURN</arg>
-</arguments>
-<msg timestamp="20210219 15:15:20.145" level="INFO">Sending key(s) ('RETURN',) to xpath://input[@id="selenium--search-items-input"] element.</msg>
-<msg timestamp="20210219 15:15:20.461" level="INFO">Pressing special key RETURN to element.</msg>
-<msg timestamp="20210219 15:15:20.462" level="INFO">Releasing special key RETURN.</msg>
-<status status="PASS" starttime="20210219 15:15:20.144" endtime="20210219 15:15:20.507"></status>
-</kw>
-<kw name="Verify Search Completed" library="keywords">
-<arguments>
-<arg>${SEARCH_TERM}</arg>
-</arguments>
-<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
-<doc>Waits until the element ``locator`` appears on the current page.</doc>
-<arguments>
-<arg>xpath://*[@id="selenium--product-grid-header"]</arg>
-</arguments>
-<status status="PASS" starttime="20210219 15:15:20.508" endtime="20210219 15:15:23.757"></status>
-</kw>
-<kw name="Get Text" library="SeleniumLibrary">
-<doc>Returns the text value of the element identified by ``locator``.</doc>
-<arguments>
-<arg>xpath://*[@id="selenium--product-grid-header"]</arg>
-</arguments>
-<assign>
-<var>${ACTUAL_TERM}</var>
-</assign>
-<msg timestamp="20210219 15:15:23.807" level="INFO">${ACTUAL_TERM} = Sökord: kiwi</msg>
-<status status="PASS" starttime="20210219 15:15:23.757" endtime="20210219 15:15:23.807"></status>
-</kw>
-<kw name="Should Be Equal" library="BuiltIn">
-<doc>Fails if the given objects are unequal.</doc>
-<arguments>
-<arg>"Sökord: ${SEARCH_TERM}"</arg>
-<arg>"${ACTUAL_TERM}"</arg>
-</arguments>
-<status status="PASS" starttime="20210219 15:15:23.807" endtime="20210219 15:15:23.807"></status>
-</kw>
-<status status="PASS" starttime="20210219 15:15:20.507" endtime="20210219 15:15:23.808"></status>
-</kw>
-<status status="PASS" starttime="20210219 15:15:18.452" endtime="20210219 15:15:23.808"></status>
-</kw>
-<doc>This is some basic info about the test2</doc>
-<tags>
-<tag>Test 2</tag>
-</tags>
-<status status="PASS" starttime="20210219 15:15:17.282" endtime="20210219 15:15:23.808" critical="yes"></status>
-</test>
-<test id="s1-s1-t3" name="User can search for another product">
-<kw name="Go to Web Page" library="keywords">
-<kw name="Load Page" library="keywords">
-<kw name="Go To" library="SeleniumLibrary">
-<doc>Navigates the current browser window to the provided ``url``.</doc>
-<arguments>
-<arg>${URL}</arg>
-</arguments>
-<msg timestamp="20210219 15:15:23.811" level="INFO">Opening url 'https:/www.willys.se/'</msg>
-<status status="PASS" starttime="20210219 15:15:23.811" endtime="20210219 15:15:24.582"></status>
-</kw>
-<status status="PASS" starttime="20210219 15:15:23.811" endtime="20210219 15:15:24.583"></status>
-</kw>
-<kw name="Verify Page Loaded" library="keywords">
-<kw name="Get Title" library="SeleniumLibrary">
 <doc>Returns the title of the current page.</doc>
-<assign>
-<var>${LINK_TEXT}</var>
-</assign>
-<msg timestamp="20210219 15:15:24.725" level="INFO">${LINK_TEXT} = Handla billig mat online | Willys</msg>
-<status status="PASS" starttime="20210219 15:15:24.583" endtime="20210219 15:15:24.725"></status>
+<msg timestamp="20210423 13:42:11.730" level="INFO">${LINK_TEXT} = SpringPetclinicAngular</msg>
+<status status="PASS" starttime="20210423 13:42:09.713" endtime="20210423 13:42:11.730"/>
 </kw>
 <kw name="Should Be Equal" library="BuiltIn">
-<doc>Fails if the given objects are unequal.</doc>
-<arguments>
 <arg>${LINK_TEXT}</arg>
-<arg>Handla billig mat online | Willys</arg>
-</arguments>
-<status status="PASS" starttime="20210219 15:15:24.726" endtime="20210219 15:15:24.726"></status>
-</kw>
-<status status="PASS" starttime="20210219 15:15:24.583" endtime="20210219 15:15:24.727"></status>
-</kw>
-<status status="PASS" starttime="20210219 15:15:23.810" endtime="20210219 15:15:24.727"></status>
-</kw>
-<kw name="Search for Product" library="keywords">
-<arguments>
-<arg>hundgodis</arg>
-</arguments>
-<kw name="Enter Search Term" library="keywords">
-<arguments>
-<arg>${SEARCH_TERM}</arg>
-</arguments>
-<kw name="Input Text" library="SeleniumLibrary">
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<arguments>
-<arg>id:selenium--search-items-input</arg>
-<arg>${SEARCH_TERM}</arg>
-</arguments>
-<msg timestamp="20210219 15:15:24.729" level="INFO">Typing text 'hundgodis' into text field 'id:selenium--search-items-input'.</msg>
-<status status="PASS" starttime="20210219 15:15:24.729" endtime="20210219 15:15:25.277"></status>
-</kw>
-<status status="PASS" starttime="20210219 15:15:24.728" endtime="20210219 15:15:25.278"></status>
-</kw>
-<kw name="Submit Search" library="keywords">
-<kw name="Press Keys" library="SeleniumLibrary">
-<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<arguments>
-<arg>xpath://input[@id="selenium--search-items-input"]</arg>
-<arg>RETURN</arg>
-</arguments>
-<msg timestamp="20210219 15:15:25.278" level="INFO">Sending key(s) ('RETURN',) to xpath://input[@id="selenium--search-items-input"] element.</msg>
-<msg timestamp="20210219 15:15:26.295" level="INFO">Pressing special key RETURN to element.</msg>
-<msg timestamp="20210219 15:15:26.295" level="INFO">Releasing special key RETURN.</msg>
-<status status="PASS" starttime="20210219 15:15:25.278" endtime="20210219 15:15:26.325"></status>
-</kw>
-<status status="PASS" starttime="20210219 15:15:25.278" endtime="20210219 15:15:26.325"></status>
-</kw>
-<kw name="Press Keys" library="SeleniumLibrary">
-<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<arguments>
-<arg>xpath://input[@id="selenium--search-items-input"]</arg>
-<arg>RETURN</arg>
-</arguments>
-<msg timestamp="20210219 15:15:26.326" level="INFO">Sending key(s) ('RETURN',) to xpath://input[@id="selenium--search-items-input"] element.</msg>
-<msg timestamp="20210219 15:15:26.656" level="INFO">Pressing special key RETURN to element.</msg>
-<msg timestamp="20210219 15:15:26.656" level="INFO">Releasing special key RETURN.</msg>
-<status status="PASS" starttime="20210219 15:15:26.325" endtime="20210219 15:15:26.695"></status>
-</kw>
-<kw name="Verify Search Completed" library="keywords">
-<arguments>
-<arg>${SEARCH_TERM}</arg>
-</arguments>
-<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
-<doc>Waits until the element ``locator`` appears on the current page.</doc>
-<arguments>
-<arg>xpath://*[@id="selenium--product-grid-header"]</arg>
-</arguments>
-<status status="PASS" starttime="20210219 15:15:26.697" endtime="20210219 15:15:29.266"></status>
-</kw>
-<kw name="Get Text" library="SeleniumLibrary">
-<doc>Returns the text value of the element identified by ``locator``.</doc>
-<arguments>
-<arg>xpath://*[@id="selenium--product-grid-header"]</arg>
-</arguments>
-<assign>
-<var>${ACTUAL_TERM}</var>
-</assign>
-<msg timestamp="20210219 15:15:29.309" level="INFO">${ACTUAL_TERM} = Sökord: hundgodis</msg>
-<status status="PASS" starttime="20210219 15:15:29.266" endtime="20210219 15:15:29.310"></status>
-</kw>
-<kw name="Should Be Equal" library="BuiltIn">
+<arg>SpringPetclinicAngular</arg>
 <doc>Fails if the given objects are unequal.</doc>
-<arguments>
-<arg>"Sökord: ${SEARCH_TERM}"</arg>
-<arg>"${ACTUAL_TERM}"</arg>
-</arguments>
-<status status="PASS" starttime="20210219 15:15:29.310" endtime="20210219 15:15:29.311"></status>
+<status status="PASS" starttime="20210423 13:42:11.730" endtime="20210423 13:42:11.730"/>
 </kw>
-<status status="PASS" starttime="20210219 15:15:26.696" endtime="20210219 15:15:29.312"></status>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Welcome to Petclinic</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20210423 13:42:15.759" level="INFO">Current page contains text 'Welcome to Petclinic'.</msg>
+<status status="PASS" starttime="20210423 13:42:11.730" endtime="20210423 13:42:15.759"/>
 </kw>
-<status status="PASS" starttime="20210219 15:15:24.727" endtime="20210219 15:15:29.312"></status>
+<status status="PASS" starttime="20210423 13:42:09.712" endtime="20210423 13:42:15.759"/>
 </kw>
-<doc>This is some basic info about the test3</doc>
-<tags>
-<tag>Test 3</tag>
-</tags>
-<status status="PASS" starttime="20210219 15:15:23.810" endtime="20210219 15:15:29.313" critical="yes"></status>
-</test>
-<kw name="End Web Test" library="keywords" type="teardown">
+<status status="PASS" starttime="20210423 13:42:07.549" endtime="20210423 13:42:15.759"/>
+</kw>
+<kw name="End Web Test" library="keywords_owner">
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20210219 15:15:29.317" endtime="20210219 15:15:31.550"></status>
+<status status="PASS" starttime="20210423 13:42:15.760" endtime="20210423 13:42:19.820"/>
 </kw>
-<status status="PASS" starttime="20210219 15:15:29.317" endtime="20210219 15:15:31.551"></status>
+<status status="PASS" starttime="20210423 13:42:15.760" endtime="20210423 13:42:19.820"/>
 </kw>
-<doc>This is some basic info about the whole test suite.</doc>
-<status status="PASS" starttime="20210219 15:15:11.596" endtime="20210219 15:15:31.551"></status>
-</suite>
-<status status="PASS" starttime="20210219 15:15:11.565" endtime="20210219 15:15:31.560"></status>
+<kw name="End Web Test" library="keywords_owner" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20210423 13:42:19.821" endtime="20210423 13:42:19.821"/>
+</kw>
+<status status="PASS" starttime="20210423 13:42:19.820" endtime="20210423 13:42:19.821"/>
+</kw>
+<doc>Verifying the page - access to welcome-page.</doc>
+<tag>TC_1</tag>
+<status status="PASS" starttime="20210423 13:42:06.534" endtime="20210423 13:42:19.821"/>
+</test>
+<test id="s1-t2" name="User can access website and navigate to owner-list.">
+<kw name="Begin Web Test" library="keywords_owner" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>about:blank</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20210423 13:42:19.823" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20210423 13:42:19.823" endtime="20210423 13:42:22.806"/>
+</kw>
+<kw name="Set Selenium Timeout" library="SeleniumLibrary">
+<arg>10</arg>
+<doc>Sets the timeout that is used by various keywords.</doc>
+<status status="PASS" starttime="20210423 13:42:22.806" endtime="20210423 13:42:24.807"/>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>2</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20210423 13:42:24.807" endtime="20210423 13:42:24.808"/>
+</kw>
+<status status="PASS" starttime="20210423 13:42:19.823" endtime="20210423 13:42:24.808"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20210423 13:42:24.808" level="INFO">Opening url 'http://localhost:4200/'</msg>
+<status status="PASS" starttime="20210423 13:42:24.808" endtime="20210423 13:42:26.961"/>
+</kw>
+<kw name="Click Element Menu" library="keywords_owner">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://html/body/app-root/div[1]/nav/div/ul/li[2]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210423 13:42:26.962" level="INFO">Clicking element 'xpath://html/body/app-root/div[1]/nav/div/ul/li[2]/a'.</msg>
+<status status="PASS" starttime="20210423 13:42:26.962" endtime="20210423 13:42:31.010"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://html/body/app-root/div[1]/nav/div/ul/li[2]/ul/li[1]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210423 13:42:31.010" level="INFO">Clicking element 'xpath://html/body/app-root/div[1]/nav/div/ul/li[2]/ul/li[1]/a'.</msg>
+<status status="PASS" starttime="20210423 13:42:31.010" endtime="20210423 13:42:35.056"/>
+</kw>
+<status status="PASS" starttime="20210423 13:42:26.962" endtime="20210423 13:42:35.056"/>
+</kw>
+<kw name="End Web Test" library="keywords_owner">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20210423 13:42:35.056" endtime="20210423 13:42:39.117"/>
+</kw>
+<status status="PASS" starttime="20210423 13:42:35.056" endtime="20210423 13:42:39.117"/>
+</kw>
+<kw name="End Web Test" library="keywords_owner" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20210423 13:42:39.118" endtime="20210423 13:42:39.118"/>
+</kw>
+<status status="PASS" starttime="20210423 13:42:39.118" endtime="20210423 13:42:39.118"/>
+</kw>
+<doc>Navigate to Owner-list.</doc>
+<tag>TC_2</tag>
+<status status="PASS" starttime="20210423 13:42:19.822" endtime="20210423 13:42:39.119"/>
+</test>
+<doc>Testsuite Owner-functionality</doc>
+<status status="PASS" starttime="20210423 13:42:06.389" endtime="20210423 13:42:39.120"/>
 </suite>
 <statistics>
 <total>
-<stat pass="3" fail="0">Critical Tests</stat>
-<stat pass="3" fail="0">All Tests</stat>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
-<stat pass="1" fail="0">Test 1</stat>
-<stat pass="1" fail="0">Test 2</stat>
-<stat pass="1" fail="0">Test 3</stat>
+<stat pass="1" fail="0" skip="0">TC_1</stat>
+<stat pass="1" fail="0" skip="0">TC_2</stat>
 </tag>
 <suite>
-<stat pass="3" fail="0" id="s1" name="Tests">Tests</stat>
-<stat pass="3" fail="0" id="s1-s1" name="Webtest">Tests.Webtest</stat>
+<stat pass="2" fail="0" skip="0" id="s1" name="petclinic Owner">petclinic Owner</stat>
 </suite>
 </statistics>
 <errors>
