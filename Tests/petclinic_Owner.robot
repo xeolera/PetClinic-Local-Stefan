@@ -23,4 +23,23 @@ User can access website and navigate to owner-list.
     [Tags]                          TC_2
     Go to                           ${URL}
     Click Element Menu
+    Click Element Menu_All
+    Verify Page_OwnerList Loaded
     End Web Test
+
+User can access website, navigate to owner-list and also refresh page.
+    [Documentation]                 Refreshing the page.
+    [Tags]                          TC_3
+    Go to                           ${URL}
+    Click Element Menu
+    Click Element Menu_All
+    Verify Page_OwnerList Loaded
+    Verify Page Not Loaded After Refresh
+    End Web Test
+
+User can access website, and navigate to owner-list from homepage (Gherkins Syntax).
+    [Tags]                          TC_4
+    GIVEN that user has access to the web page
+    AND user clicks on the menu "Owners"
+    WHEN user clicks on menu option "All"
+    THEN user will recieve the list of all current owners.
