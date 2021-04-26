@@ -1,5 +1,5 @@
 *** Settings ***
-Documentation                      Testsuite Non-Functional
+Documentation                      Testsuite Website Performance
 Resource                           ../Resources/keywords_nonFunctionalTest.robot
 Library                            SeleniumLibrary
 Test Setup                         Begin Web Test
@@ -12,8 +12,8 @@ ${URL2}             http://localhost:4200/petclinic/owners
 
 *** Test Cases ***
 
-Check perfomance of the webpage
-    [Documentation]                 Website can handle multiple navigation requests from homepage to owner list.
+Website can handle multiple navigation requests from homepage to owner list.
+    [Documentation]                 Check perfomance of the webpage
     [Tags]                          TC_n1
     Go to Web Page
     Click Element Menu
@@ -41,8 +41,8 @@ Check perfomance of the webpage
     Verify Page_Home Loaded
     End Web Test
 
-Check perfomance of the webpages menu navigation
-    [Documentation]                 Website can handle multiple menu requests from menu.
+Website can handle multiple menu requests from user.
+    [Documentation]                 Check perfomance of the webpages menu navigation
     [Tags]                          TC_n2
     Go to Web Page
     Click Element Menu_Veterinarians
@@ -89,8 +89,8 @@ Check perfomance of the webpages menu navigation
     Click Element Menu_Home
     Verify Page_Home Loaded
 
-Check owner page's button functionalities
-    [Documentation]                 Website can handle multiple button requests from user.
+Website can handle multiple button requests from user.
+    [Documentation]                 Check owner page's button functionalities
     [Tags]                          TC_n3
     Go to Web Page
     Click Element Menu
