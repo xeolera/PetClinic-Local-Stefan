@@ -42,7 +42,7 @@ Verify Page_OwnerList Loaded
     Wait Until Page Contains Element        xpath://html/body/app-root/app-owner-list/div/div/h2
     Page Should Contain                     Owners
 
-THEN user will recieve the list of all current owners.
+THEN user will recieve the list of all current owners
     Verify Page_OwnerList Loaded
 
 End Web Test
