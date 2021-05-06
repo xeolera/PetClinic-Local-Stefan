@@ -8,12 +8,12 @@ Test Teardown                      End Web Test
 *** Variables ***
 ${BROWSER}          chrome
 ${URL}              http://localhost:4200/
-${URL2}             http://localhost:4200/petclinic/owners
+${URL2}             http://locatlhost:4200/petclinic/owners
 
 *** Test Cases ***
 
 Användaren kan skapa husdjurtyp som innehåller specialtecken
-    [Documentation]                 Verifiera att webbsidan tillåter specialtecken när man matar in husdjurtypnamn.
+    [Documentation]                 Verifiera att webbsidan illåter specialtecken när man matar in husdjurtypnamn.
     [Tags]                          TF_B_1
     Go to Web Page
     Click Menu_petType

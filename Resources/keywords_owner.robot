@@ -4,7 +4,6 @@
 Begin Web Test
     Open browser                     about:blank             ${BROWSER}
     Set selenium timeout             10
-    Set selenium speed               1
 
 Go to Web Page
     Load Page
