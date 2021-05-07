@@ -1,5 +1,5 @@
 *** Settings ***
-Documentation                      Testsuite Add Pet Type
+Documentation                      Testsuite Add Pet Type Extra
 Resource                           ../Resources/keywords_petType.robot
 Resource                           ../Resources/keywords_general.robot
 Library                            SeleniumLibrary
