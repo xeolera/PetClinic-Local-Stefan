@@ -1,26 +1,11 @@
 *** Settings ***
 
 *** Keywords ***
-Begin Web Test
-    Open browser                     about:blank             ${BROWSER}
-    Set selenium timeout             10
-
-Go to Web Page
-    Load Page
-    Verify Page Loaded
-
-Load Page
-    Go to                           ${URL}
 
 Verify Page Not Loaded After Refresh
     Go to                           ${URL2}
     Wait Until Page Contains Element        xpath://html/body/pre
     Page Should Contain                     Resource was not found.
-
-Verify Page Loaded
-    ${LINK_TEXT}                    Get Title
-    Should Be Equal                 ${LINK_TEXT}      SpringPetclinicAngular
-    Page Should Contain             Welcome to Petclinic
 
 GIVEN that user has access to the web page
     Go to Web Page
@@ -43,6 +28,3 @@ Verify Page_OwnerList Loaded
 
 THEN user will recieve the list of all current owners
     Verify Page_OwnerList Loaded
-
-End Web Test
-    Close Browser

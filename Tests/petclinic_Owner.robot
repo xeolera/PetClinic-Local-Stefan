@@ -1,6 +1,7 @@
 *** Settings ***
 Documentation                      Testsuite Owner-functionality
 Resource                           ../Resources/keywords_owner.robot
+Resource                           ../Resources/keywords_general.robot
 Library                            SeleniumLibrary
 Test Setup                         Begin Web Test
 Test Teardown                      End Web Test
