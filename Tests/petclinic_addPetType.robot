@@ -1,6 +1,7 @@
 *** Settings ***
 Documentation                      Testsuite Add Pet Type
 Resource                           ../Resources/keywords_petType.robot
+Resource                           ../Resources/generalKeywords.robot
 Library                            SeleniumLibrary
 Test Setup                         Begin Web Test
 Test Teardown                      End Web Test
