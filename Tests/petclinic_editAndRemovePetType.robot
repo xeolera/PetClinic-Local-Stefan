@@ -19,7 +19,7 @@ Användaren kan påbörja ändringsprocessen genom "Edit"-knappen i Pet Types-si
     Go to PetClinic && Click Menu && Verify Page
     Click Button && Verify Edit and Input Field Page Loaded
 
-Användaren kan mata in nya ändringen av husdjurtyp utan att lagra
+Användaren kan mata in nya ändringen av husdjurtyp utan att spara
     [Documentation]                 Verifiera att användaren kan mata in egen input i inmatningsfälten utan att uppdatera
     [Tags]                          TF_C_2
     Go to PetClinic && Click Menu && Verify Page
