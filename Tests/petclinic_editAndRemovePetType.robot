@@ -45,4 +45,4 @@ Användaren kan ta bort husdjurtypen "hästarärgrymma?//" från listan genom "D
     [Documentation]                 Verifiera att användaren kan ta bort önskad husdjurtyp från listan
     [Tags]                          TF_C_5
     Go to PetClinic && Click Menu && Verify Page
-    Delete PetType && Verify Page Loaded
+    Delete PetType && Verify Page Loaded                    hästarärgrymma?//
