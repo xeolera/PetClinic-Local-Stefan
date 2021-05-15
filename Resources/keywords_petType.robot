@@ -3,7 +3,6 @@
 *** Keywords ***
 
 Go to PetClinic && Click Menu && Verify Page
-    Set selenium speed                      1
     Go to Web Page
     Click Menu_petType
     Verify Page_petType Loaded
