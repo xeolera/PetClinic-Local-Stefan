@@ -36,6 +36,7 @@ Verify Page_petType_EditPetTypePage Loaded
 Click Button && Verify Edit and Input Field Page Loaded
     Click Button_petType_edit_ID5
     Verify Page_petType_EditPetTypePage Loaded
+    Sleep                                   2
 
 Edit ID 1 && Verify Page
     Click Button_petType_Edit_ID1
