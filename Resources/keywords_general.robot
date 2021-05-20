@@ -1,5 +1,10 @@
 *** Settings ***
 
+*** Variables ***
+${BROWSER}          chrome
+${URL}              http://localhost:4200/
+${URL_VETERINARY}   http://localhost:4200/petclinic/vets
+
 *** Keywords ***
 Begin Web Test
     Open browser                     about:blank             ${BROWSER}
