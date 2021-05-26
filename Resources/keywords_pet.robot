@@ -161,12 +161,13 @@ Given that im on the landing page
 
 When l edit a pet
 
-
-  click element                   xpath://html/body/app-root/div[1]/nav/div/ul/li[2]/a
-  click element                   xpath://html/body/app-root/div[1]/nav/div/ul/li[2]/ul/li[1]/a
-  wait until page contains        Owners
-  click element                   xpath://html/body/app-root/app-owner-list/div/div/div/table/tbody/tr[1]/td[1]/a
-  wait until page contains        Pets and Visits
+  click element                     xpath://html/body/app-root/div[1]/nav/div/ul/li[2]/a
+  click element                      xpath://html/body/app-root/div[1]/nav/div/ul/li[2]/ul/li[1]/a
+  wait until page contains element    xpath://html/body/app-root/app-owner-list/div/div/h2
+  page should contain                 Owners
+  click element                      xpath://html/body/app-root/app-owner-list/div/div/div/table/tbody/tr[1]/td[1]/a
+  wait until page contains element   xpath://html/body/app-root/app-owner-detail/div/div/h2[2]
+  page should contain                 Pets and Visits
   click element                   xpath://html/body/app-root/app-owner-detail/div/div/table[2]/tr/app-pet-list/table/tr/td[1]/dl/button[1]
 And leave the name filed empty
 
