@@ -16,7 +16,7 @@ ${EMPTY}
 
 Ändra en unik id husdjurtyp som har samma husdjurtypnamn som en annan
     [Documentation]                 Verifiera att användaren ändrar bara en unik husdjurtyp som har samma namn som annan husdjurtyp.
-    [Tags]                          TF_D_1      GD-243
+    [Tags]                          TF_D_1
     Go to PetClinic && Click Menu && Verify Page
     Edit ID 4 && Verify Page
     Input New Pet Type Text         papegoja

@@ -209,7 +209,7 @@ User Inputs Birth Date to the New Pet
     Click Element                                   xpath://html/body/app-root/app-pet-add/div/div/form/div[4]/div/input
     Input Text                                      name:birthDate                                       ${search_term}
 Chose "Cat" From List
-    Select From List By Label                       xpath://*[@id="type"]  cat
+    Select From List By Label                       xpath://*[@id="type"]                                           cat
 Click Button "Save Pet" on Add Pet Page
     Click Element                                   xpath://html/body/app-root/app-pet-add/div/div/form/div[6]/div/button[2]
 User Chooses Type From List && Clicks Save Pet
